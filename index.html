@@ -9,11 +9,19 @@
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- Main JS -->
-  <script defer src="./js/script.js"></script>
+  <script defer src="js/script.js"></script>
 
   <title>Pokédex</title>
 </head>
 <body>
+  <audio autoplay loop>
+    <source src="audio/1.06PalletTownTheme.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+ </audio>
+
+  <header id="toTop">
+    <img src="images/pokemon-23.svg" alt="logoPokemon">
+  </header>
 
   <main>
     <img src="#" alt="pokemon" class="pokemon__image">
@@ -37,9 +45,7 @@
       <button class="button btn-next">Next &gt;</button>
     </div>
 
-    <div class="soundOnOff">
-      <i class="bi bi-volume-mute-fill soundOff"></i>
-  </div>
+    <audio id="audio-click" src="audio/Pokemon(AButton)-SoundEffect(HD).mp3"></audio>
 
     <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
   </main>

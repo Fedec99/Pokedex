@@ -57,3 +57,11 @@ buttonNext.addEventListener('click', () => {
 });
 
 renderPokemon(searchPokemon);
+
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('click', function() {
+      var audio = document.getElementById('audio-click');
+      audio.play();
+  });
+});
+
